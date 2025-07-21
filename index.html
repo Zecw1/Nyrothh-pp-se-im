@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYROTHH Discord PP Seçim</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #2c2c2c;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        button {
+            background-color: #7289da;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #677bc4;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        #ppImage {
+            max-width: 200px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NYROTHH Discord PP Seçim</h1>
+        <input type="text" id="featuresInput" placeholder="Özelliklerinizi girin...">
+        <br>
+        <button onclick="generatePP()">PP Seç</button>
+        <button onclick="downloadPP()">İndir</button>
+        <img id="ppImage" src="" alt="Seçilen PP">
+    </div>
+
+    <script>
+        const ppImages = Array.from({ length: 1000 },
